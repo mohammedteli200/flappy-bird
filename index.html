@@ -76,7 +76,7 @@ canvas{width:100%;height:100%;display:block;border-radius:14px;box-shadow:0 10px
 <label class="vol">🔊 <input id="mv" type="range" min="0" max="100" value="50"></label>
 </div></div></div>
 <script>
-const c=document.getElementById('c'),g=c.getContext('2d',{alpha:false,desynchronized:true}),W=360,H=600,GY=520;
+const c=document.getElementById('c'),g=c.getContext('2d',{alpha:false}),W=360,H=600,GY=520;
 g.scale(1.5,1.5);
 let best=0;try{best=+localStorage.getItem('fb_best')||0}catch(e){}
 let st='ready',bird,pipes,score,f=0,gx=0,flash=0,pt=[],newBest=false,shake=0,deadT=0,sk=0,T=0;
